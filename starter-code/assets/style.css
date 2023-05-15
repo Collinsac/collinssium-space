@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --white--color: rgb(255, 255, 255);
+    --font-one: "Libre Baskerville", serif;
+    --font-two: "Barlow Condensed", sans-serif;
+    --grey-one: rgb(120, 120, 120);
+    --grey-two: rgba(255, 255, 255, 0.077);
+}
+
+#icon {
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+header,
+section {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header {
+    background-image: url(./home/background-home-desktop.jpg);
+}
+
+.list {
+    border-radius: 3px;
+    height: 87px;
+    background-color: rgba(179, 179, 179, 0.308);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    flex: 1.15;
+    z-index: 999;
+}
+
+.list .ul {
+    margin: 0 30px;
+    font-family: cursive;
+    color: var(--white--color);
+    font-weight: 100;
+}
+
+.list .ul {
+    height: 100%;
+    justify-content: center;
+}
+
+.list .ul a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list .ul a span {
+    font-weight: 900;
+    margin: 0 5px 0 0;
+}
+
+.list .ul a .line-hover {
+    height: 3px;
+    background-color: var(--white--color);
+    width: 0%;
+}
+
+.text {
+    flex-wrap: nowrap;
+}
+
+.list .ul a:hover .line-hover {
+    width: 100%;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    justify-content: space-between;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-can {
+    flex: 1;
+}
+
+.logo {
+    margin: 0 0 0 60px;
+}
+
+.middle {
+    flex: 1;
+    z-index: 1000;
+}
+
+.middle hr {
+    transform: translatex(40px);
+}
+
+/* the styles top the btn "explore and the text "so, you are to travel"" */
+
+.text-sub-1 .spacee {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 130px;
+}
+
+.text-sub-1 {
+    max-width: 400px;
+    color: var(--white--color);
+}
+
+.text-sub-1 h3 {
+    font-family: var(--font-two);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.text-sub-2 .btn {
+    width: 250px;
+    background-color: var(--white--color);
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+}
+
+.text-sub-2 .btn:active {
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.text-sub {
+    align-items: end;
+    justify-content: space-around;
+    padding: 300px 0 0 0;
+    font-family: var(--font-one);
+}
+
+#sec-1 {
+    padding: 0 0 30px 0;
+    background-image: url("./destination/background-destination-desktop.jpg");
+}
+
+.sec-1 .display-flex :nth-child(1) {
+    margin: 0 20px 0 0;
+    color: var(--grey-one);
+}
+
+.sec-1 .display-flex :nth-child(2) {
+    color: var(--white--color);
+}
+
+.sec-1 .sec-1-1 .display-flex {
+    font-family: var(--font-two);
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 160px 0 60px 0;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+
+}
+
+.men-1 {
+
+    color: var(--white--color);
+    font-size: 22px;
+    line-height: 35px;
+    margin: 0 10px;
+    font-family: var(--font-two);
+    font-weight: bolder;
+}
+
+.men-1 .line {
+    background-color: var(--white--color);
+    height: 5px;
+    border-radius: 5px;
+    width: 0;
+}
+
+.men-1:hover .line {
+    width: 100%;
+}
+
+
+
+
+.distance {
+    font-family: var(--font-two);
+    font-size: 18px;
+    color: var(--white--color);
+    font-weight: 300;
+}
+
+.distance-text {
+    font-size: 25px;
+    color: var(--white--color);
+    font-family: var(--font-one);
+    padding: 15px 0 0 0;
+}
+
+.distance-can {
+    margin: 25px 0 0 0;
+}
+
+.dis-can {
+    align-items: center;
+    display: flex;
+    column-gap: 100px;
+}
+
+.dis-can-cans {
+    margin-top: 50px;
+}
+
+
+
+#sec-2 {
+    padding: 100px;
+    background-image: url("./crew/background-crew-desktop.jpg");
+}
+
+
+#sec-2 .sec-2-1 {
+    max-width: 600px;
+}
+
+.meet h2 {
+    color: var(--grey-one);
+    font-family: var(--font-one);
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.meet h3 {
+    color: var(--grey-one);
+    font-family: var(--font-one);
+    font-weight: 100;
+}
+
+.meet h1 {
+    font-size: 50px;
+    color: var(--white--color);
+    padding: 10px 0 20px 0;
+}
+
+.meet p {
+    max-width: 400px;
+    font-family: var(--font-two);
+    font-size: 19px;
+    color: var(--white--color);
+}
+
+.meet {
+    margin: 0 0 80px 0;
+}
+
+.sec-2-1 .display-flex {
+    padding: 0px 0 150px 0px;
+    font-family: var(--font-two);
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.btn-rad {
+    width: 18px;
+    aspect-ratio: 1/1;
+    background-color: var(--grey-two);
+    border-radius: 50%;
+    margin: 7px 7px 30px 7px;
+    cursor: pointer;
+
+}
+
+.rad {
+    background-color: var(--white--color);
+}
+
+
+#sec-3 {
+    background-image: url("./technology/background-technology-desktop.jpg");
+}
+
+
+#sec-3 .sec-2-1 {
+    max-width: 700px;
+}
+
+.num {
+    margin: 0 40px 0 0;
+}
+
+.num .btn-num {
+    font-size: 40px;
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--grey-one);
+    color: var(--white--color);
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.num .spec {
+    background-color: var(--white--color);
+    color: black;
+}
+
+.number {
+    align-items: normal;
+}
+
+.wi10 {
+    aspect-ratio: 1/1;
+}
+
+#sec-3 {
+    padding: 30px;
+}
+
+@media screen and (max-width:1000px) {
+    .text-sub {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-sub-1,
+    .sec-1-1 {
+        margin: 0 0 30px 0;
+    }
+
+    .sec-1-2,
+    .sec-2-1,
+    .mimi {
+        text-align: center;
+    }
+
+    .dis-mini {
+        justify-content: center;
+    }
+
+    .ANOUSHEH-mini {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sec-3 {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .wi10 {
+        width: 100%;
+    }
+
+    .wi10 img {
+        width: 100%;
+    }
+
+    .middle {
+        display: none;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .list .ul a {
+        margin: 0 10px;
+    }
+
+    .list .ul {
+        margin: 0 10px;
+    }
+
+    .logo {
+        margin: 0 0 0 30px;
+    }
+}
+
+@media screen and (max-width:613px) {
+    .list .ul {
+        flex-direction: column;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .list .ul a {
+        margin: 10px 0;
+    }
+
+    .list {
+        height: fit-content;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .block{
+        display: block;
+    }
+
+    #icon {
+        display: block;
+        position: fixed;
+        right: 35px;
+        top: 40px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+   
+
+   #sec-2{
+    padding: 10px;
+   }
+}
+
+@media screen and (max-width:737px) {
+    .sec-last{
+        flex-direction: column;
+    }
+
+    .num{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:20px ;
+    }
+
+    .num .btn-num{
+        width: 35px;
+        font-size: 20px;
+    }
+
+    .meet{
+        text-align: center;
+    }
+
+    .meet p {
+        
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:515px){
+.text-sub-1 .spacee{
+    font-size: 80px;
+}
+}
